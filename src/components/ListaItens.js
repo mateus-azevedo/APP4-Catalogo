@@ -10,7 +10,7 @@ export default class ListaItens extends Component {
     console.log('Construindo a aplicação');
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     console.log('Fazer alguma coisa antes de renderizar');
   }
 
