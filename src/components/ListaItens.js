@@ -7,20 +7,12 @@ import Itens from './Itens';
 
 export default class ListaItens extends Component {
 
-  constructor() {
+  UNSAFE_componentWillMount() {
     //requisição HTTP
-    super();
     axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
       .then(response => { console.log(response); })
       .catch(() => { console.log('Erro ao recuperar os dados'); });
   }
-
-  // UNSAFE_componentWillMout() {
-  //   //requisição HTTP
-  //   axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
-  //     .then(response => { console.log(response); })
-  //     .catch(() => { console.log('Erro ao recuperar os dados'); });
-  // }
 
   render() {
     return (
