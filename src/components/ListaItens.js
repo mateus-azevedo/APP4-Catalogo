@@ -23,7 +23,7 @@ export default class ListaItens extends Component {
   render() {
     return (
       <View>
-        { console.log(this.state.listaItens) }
+        { this.state.listaItens.map( function(item) { console.log(item) } ) }
       </View>
     );
   }
